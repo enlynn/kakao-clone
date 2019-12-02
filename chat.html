@@ -13,7 +13,7 @@
     <title>Chat | KOKOA TALK</title>
   </head>
 
-  <body>
+  <body class="chat-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">5:15</span>
@@ -32,7 +32,7 @@
         <a href="index.html" class="header__back-btn">
           <i class="fas fa-arrow-left"></i>
         </a>
-        <h1 class="header__column__title">SU YEON</h1>
+        <h1 class="header__column__title">Komobear</h1>
       </div>
       <div class="header__column">
         <span class="header__column__icon">
@@ -44,46 +44,61 @@
       </div>
     </header>
 
-    <main class="chat">
-      <span class="chat__timestamp">Friday, January 11, 2019 </span>
+    <main class="chat-screen">
       <ul class="chat__messages">
+        <div class="chat__timestamp-container">
+          <div class="line-left"></div>
+          <span class="chat__timestamp">Friday, January 11, 2019 </span>
+          <div class="line-right"></div>
+        </div>
         <li class="incoming-message message">
-          <img src="images/chat-avatar.jpg" class="g-avatar message__avatar" />
+          <img src="images/chat-avatar.jpg" class="s-avatar message__avatar" />
           <div class="message__content">
             <span class="message__author"> Su Yeon </span>
             <span class="message__bubble"> What up? </span>
           </div>
-          <span class="message__timestamp"> 15:19 </span>
         </li>
 
         <li class="outgoing-message message">
-          <span class="message__timestamp"> 15:23 </span>
           <div class="message__content">
-            <span class="message__bubble"> Not much </span>
+            <span class="message__bubble">Not Much</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/chat-avatar.jpg" class="s-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author"> Su Yeon </span>
+            <span class="message__bubble"> Wanna meet up? </span>
+          </div>
+        </li>
+
+        <li class="outgoing-message message">
+          <div class="message__content">
+            <span class="message__bubble">Sure</span>
           </div>
         </li>
       </ul>
     </main>
 
     <div class="chat__write">
-      <span class="write__column">
+      <div class="chat__write__column">
         <i class="far fa-plus-square"></i>
-      </span>
-      <span class="chat__write__column">
+      </div>
+      <div class="chat__write__column">
         <input
           type="text"
           placeholder="Type your word"
           class="chat__write__input"
         />
-      </span>
-      <span class="chat__write__column">
-        <span class="chat__wrtie-icon">
+      </div>
+      <div class="chat__write__column">
+        <span class="chat__write-icon">
           <i class="far fa-kiss-beam"></i>
         </span>
-        <span class="chat__wrtie-icon">
+        <span class="chat__write-icon">
           <i class="fas fa-microphone"></i>
         </span>
-      </span>
+      </div>
     </div>
   </body>
 </html>
